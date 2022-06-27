@@ -81,7 +81,7 @@ it copies **nothing**! clearly `*a` isn't a valid path
 run this command
 
 ```cmd
-npm run build -- -c a1StarAtStart
+npm run build -- -c aDeepSearch
 ```
 
 with this config
