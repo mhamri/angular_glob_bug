@@ -23,16 +23,47 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
+            "ab": {
+              "assets": [
+                {
+                  "glob": "**/*.jpg",
+                  "input": "src/folderToCopyContentFrom",
+                  "output": "ab"
+                }
+              ]
+            },
+            "aDeepSearch": {
+              "assets": [
+                {
+                  "glob": "**/A1/**/*.jpg",
+                  "input": "src/folderToCopyContentFrom",
+                  "output": "aDeepSearch_Out"
+                }
+              ]
+            },
+            "a1WithoutStarAtStart": {
+              "assets": [
+                {
+                  "glob": "a/**/*.jpg",
+                  "input": "src/folderToCopyContentFrom",
+                  "output": "a1WithoutStarAtStart_Out"
+                }
+              ]
+            },
+            "a1StarAtStart": {
+              "assets": [
+                {
+                  "glob": "*a/**/*.jpg",
+                  "input": "src/folderToCopyContentFrom",
+                  "output": "a1StarAtStart_Out"
+                }
+              ]
+            },
             "production": {
               "budgets": [
                 {
@@ -91,17 +122,15 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "aebea8ab-ddce-44dd-9e28-8d3243c29134"
   }
 }
