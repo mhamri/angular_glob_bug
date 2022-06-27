@@ -40,7 +40,7 @@
             "aDeepSearch": {
               "assets": [
                 {
-                  "glob": "**/A1/**/*.jpg",
+                  "glob": "**/a/a*/*.jpg",
                   "input": "src/folderToCopyContentFrom",
                   "output": "aDeepSearch_Out"
                 }
@@ -51,7 +51,7 @@
                 {
                   "glob": "a/**/*.jpg",
                   "input": "src/folderToCopyContentFrom",
-                  "output": "a1WithoutStarAtStart_Out"
+                  "output": "a1WithoutStarAtStart_OK"
                 }
               ]
             },
@@ -60,7 +60,7 @@
                 {
                   "glob": "*a/**/*.jpg",
                   "input": "src/folderToCopyContentFrom",
-                  "output": "a1StarAtStart_Out"
+                  "output": "a1StarAtStart_NotOK"
                 }
               ]
             },
